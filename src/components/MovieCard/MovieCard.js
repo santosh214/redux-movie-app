@@ -1,12 +1,12 @@
 import React from "react";
 import './MovieCard.scss'
 const MovieCard = (props) => {
+    console.log("props",props)
   const { data } = props;
   return (
     <div className="card-item">
       <div className="card-inner">
         <div className="card-top">
-            {console.log("data",data)}
           <img src={data.Poster} alt={data.Title} />
         </div>
         <div className="card-bottom">
